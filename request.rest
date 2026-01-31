@@ -1,0 +1,8 @@
+### 1) Add a New Post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "senderId": "60f7f7a2c2b4f21a4c0d5678",
+  "message": "Hello from my first post!"
+}
