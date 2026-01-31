@@ -1,13 +1,10 @@
 import express from "express";
 import cors from "cors";
-
+import postsRouter from "./routes/Post";
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (_req, res) => {
-  res.json({ ok: true, service: "posts-comments-api" });
-});
-
+app.use("/posts", postsRouter);
 export default app;
